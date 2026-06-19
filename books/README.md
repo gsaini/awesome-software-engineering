@@ -32,6 +32,17 @@ A curated, annotated reading list. Every book here earns its place. Levels: 🟢
 | The Mythical Man-Month | Fred Brooks | 🟢 | Timeless truths about software projects and teams. |
 | A Philosophy of Software Design | John Ousterhout | 🟡 | Deep modules, complexity, and design intuition. |
 
+## 🕸️ Web Engineering & Performance
+
+Curated picks from **[Addy Osmani](https://addyosmani.com/)** (Google Chrome engineering lead) — several are free to read online.
+
+| Book | Author | Level | Why it matters |
+| ---- | ------ | ----- | -------------- |
+| [Learning JavaScript Design Patterns (2nd Ed.)](https://www.patterns.dev/vanilla/) | Addy Osmani | 🟡 | Modern design, performance, and rendering patterns for JS & React. The definitive patterns reference — [free online](https://addyosmani.com/javascript-design-patterns/). |
+| [Learning Patterns (patterns.dev)](https://www.patterns.dev/) | Addy Osmani & Lydia Hallie | 🟡 | Design, rendering, and performance patterns for modern web apps. Free, interactive. |
+| [Image Optimization](https://www.smashingmagazine.com/printed-books/image-optimization/) | Addy Osmani | 🟡 | A complete guide to shipping fast, lightweight images on the web. |
+| [Developing Backbone.js Applications](https://addyosmani.com/backbone-fundamentals/) | Addy Osmani | 🟢 | Structuring front-end apps with MV* patterns. Dated stack, but the architectural lessons hold. Free online. |
+
 ## 🌐 Distributed Systems & Reliability
 
 | Book | Author | Level | Why it matters |
