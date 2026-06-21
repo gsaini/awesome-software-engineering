@@ -2,6 +2,14 @@
 
 Living references — blogs, newsletters, podcasts, and sites worth following over time.
 
+## 📌 Deep dives & must-read articles
+
+Standout long-form articles worth reading in full (not just following the author).
+
+| Article | Author | Why read |
+| ------- | ------ | -------- |
+| [How modern browsers work](https://x.com/i/article/2068150790985011200) | Addy Osmani | An end-to-end tour of browser internals — networking, HTML/CSS parsing, layout & paint, the compositing pipeline, V8's JIT tiers (Ignition → Sparkplug → Maglev → TurboFan), ES module loading, multi-process site isolation, and how Chromium/Gecko/WebKit differ. ([announcement tweet](https://x.com/addyosmani/status/2068394292796871019)) |
+
 ## ✍️ Blogs & engineering writing
 
 | Resource | Why follow |
