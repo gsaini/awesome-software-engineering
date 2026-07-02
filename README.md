@@ -38,6 +38,7 @@ awesome-software-engineering/
 ├── books/                # Curated, annotated book recommendations by topic
 ├── papers/               # Classic & modern academic papers (links + notes)
 ├── courses/              # Free & paid courses, lectures, video series
+├── notes/                # Original, self-authored deep-dive study notes
 ├── roadmaps/             # Step-by-step learning paths from zero to senior
 └── resources/            # Blogs, newsletters, podcasts, and reference sites
 ```
@@ -59,6 +60,7 @@ Each folder has its own `README.md` acting as a mini-index. Start there.
 - [📗 Books](books/)
 - [📄 Papers](papers/)
 - [🎓 Courses](courses/)
+- [📝 Study Notes](notes/)
 - [🗺️ Roadmaps](roadmaps/)
 - [🔗 Resources](resources/)
 - [🤝 Contributing](#-contributing)
@@ -78,7 +80,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/)
 - **System Design & Architecture** → [books/](books/) · [papers/](papers/)
 - **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/)
-- **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/)
+- **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/) · [notes/database-indexing.md](notes/database-indexing.md)
 - **AI & Agentic Engineering** → [whitepapers/ai-agentic-engineering/](whitepapers/ai-agentic-engineering/)
 - **DevOps, SRE & Reliability** → [books/](books/) · [resources/](resources/)
 - **Security** → [books/](books/) · [papers/](papers/)
