@@ -81,7 +81,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **System Design & Architecture** → [books/](books/) · [papers/](papers/)
 - **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/)
 - **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/) · [notes/database-indexing.md](notes/database-indexing.md)
-- **AI & Agentic Engineering** → [whitepapers/ai-agentic-engineering/](whitepapers/ai-agentic-engineering/)
+- **AI & Agentic Engineering** → [whitepapers/ai-agentic-engineering/](whitepapers/ai-agentic-engineering/) · [notes/loop-engineering.md](notes/loop-engineering.md)
 - **DevOps, SRE & Reliability** → [books/](books/) · [resources/](resources/)
 - **Security** → [books/](books/) · [papers/](papers/)
 - **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/)

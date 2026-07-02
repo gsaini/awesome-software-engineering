@@ -4,6 +4,12 @@ Original, self-authored deep-dive notes on core software-engineering topics — 
 
 Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 
+## 🤖 AI & Agentic Engineering
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Loop Engineering](loop-engineering.md) | 🟡 | Designing the loop an agent runs inside — agent vs. loop, the core cycle, 20 loop design patterns across 5 families, Karpathy's LOOPS.md field notes, and production controls. |
+
 ## 🗄️ Databases & Data
 
 | Note | Level | Summary |
