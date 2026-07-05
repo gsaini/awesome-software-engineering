@@ -84,7 +84,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **AI & Agentic Engineering** → [whitepapers/ai-agentic-engineering/](whitepapers/ai-agentic-engineering/) · [notes/loop-engineering.md](notes/loop-engineering.md)
 - **DevOps, SRE & Reliability** → [books/](books/) · [resources/](resources/)
 - **Security** → [books/](books/) · [papers/](papers/)
-- **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/)
+- **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/) · [notes/cyclomatic-complexity.md](notes/cyclomatic-complexity.md) · [notes/crap-score.md](notes/crap-score.md)
 - **Career & Leadership** → [books/](books/) · [resources/](resources/)
 
 ## 🤝 Contributing

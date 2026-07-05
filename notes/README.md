@@ -16,6 +16,13 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | ---- | ----- | ------- |
 | [Database Indexing](database-indexing.md) | 🟡 | What indexes are, B+Trees vs. LSM-trees, clustered vs. non-clustered, composite & covering indexes, costs, and how to read `EXPLAIN`. |
 
+## 🛠️ Software Craft & Code Quality
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Cyclomatic Complexity](cyclomatic-complexity.md) | 🟢 | McCabe's metric — counting independent paths, how to calculate it, what the number means, and how to reduce it. |
+| [CRAP Score](crap-score.md) | 🟡 | Change Risk Anti-Patterns — combining complexity and test coverage into one change-risk number, with the formula, thresholds, and the test-vs-refactor trade-off. |
+
 ---
 
 ### Adding a note
