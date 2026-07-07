@@ -4,6 +4,8 @@ Original, self-authored deep-dive notes on core software-engineering topics — 
 
 Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 
+> 🗓️ Looking for the day-by-day journal of what I studied? See the **[Learning Log](learning-log/)**.
+
 ## 🤖 AI & Agentic Engineering
 
 | Note | Level | Summary |
