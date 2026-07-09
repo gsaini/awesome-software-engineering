@@ -6,7 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
-| [2026-07-07](2026-07-07.md) | Building an agent evaluator (LLM-as-judge, trajectory vs. outcome, evals as datasets) |
+| [2026-07-07](2026-07-07.md) | Building an agent evaluator (LLM-as-judge, trajectory vs. outcome) · Database transactions & isolation levels |
 | [2026-07-06](2026-07-06.md) | Database indexing · Loop engineering · Cyclomatic complexity · CRAP score |
 
 ---

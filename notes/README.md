@@ -18,6 +18,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | Note | Level | Summary |
 | ---- | ----- | ------- |
 | [Database Indexing](database-indexing.md) | 🟡 | What indexes are, B+Trees vs. LSM-trees, clustered vs. non-clustered, composite & covering indexes, costs, and how to read `EXPLAIN`. |
+| [Database Transactions & Isolation Levels](database-transactions-isolation.md) | 🟡 | ACID, the concurrency anomalies, the four isolation levels, locking vs. MVCC, snapshot isolation & write skew, and real-engine defaults. |
 
 ## 🛠️ Software Craft & Code Quality
 
