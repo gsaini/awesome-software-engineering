@@ -20,6 +20,12 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Database Indexing](database-indexing.md) | 🟡 | What indexes are, B+Trees vs. LSM-trees, clustered vs. non-clustered, composite & covering indexes, costs, and how to read `EXPLAIN`. |
 | [Database Transactions & Isolation Levels](database-transactions-isolation.md) | 🟡 | ACID, the concurrency anomalies, the four isolation levels, locking vs. MVCC, snapshot isolation & write skew, and real-engine defaults. |
 
+## 🧰 Tooling & Developer Experience
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [pnpm Tips & Capabilities (v11)](pnpm-tips.md) | 🟢 | Why pnpm's store + strict `node_modules` are different, an everyday cheat sheet, workspaces & filtering, catalogs, overrides & patching, and what's new/secure-by-default in v11. |
+
 ## 🛠️ Software Craft & Code Quality
 
 | Note | Level | Summary |
