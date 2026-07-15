@@ -21,6 +21,12 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Database Transactions & Isolation Levels](database-transactions-isolation.md) | 🟡 | ACID, the concurrency anomalies, the four isolation levels, locking vs. MVCC, snapshot isolation & write skew, and real-engine defaults. |
 | [Caching Strategies & Invalidation](caching-strategies.md) | 🟡 | Where caches live, read/write patterns (cache-aside, write-through/back), eviction, invalidation approaches, the stampede/penetration/avalanche failure modes, and staleness. |
 
+## ⚙️ Systems, Reliability & Operations
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Observability](observability.md) | 🟡 | Monitoring vs. observability, metrics/logs/traces (and wide events), cardinality, RED/USE/Golden Signals, SLOs & error budgets, OpenTelemetry, and sampling. |
+
 ## 🧰 Tooling & Developer Experience
 
 | Note | Level | Summary |
