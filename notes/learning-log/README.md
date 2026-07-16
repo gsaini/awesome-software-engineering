@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-07-15](2026-07-15.md) | Security fundamentals (STRIDE, OWASP Top 10:2025, authn vs. authz, crypto basics, supply chain) |
 | [2026-07-14](2026-07-14.md) | Observability (metrics/logs/traces, cardinality, RED/USE, SLOs & error budgets, OpenTelemetry) |
 | [2026-07-13](2026-07-13.md) | Caching strategies & invalidation (cache-aside, eviction, stampede/penetration/avalanche) |
 | [2026-07-07](2026-07-07.md) | Building an agent evaluator (LLM-as-judge, trajectory vs. outcome) · Database transactions & isolation levels |

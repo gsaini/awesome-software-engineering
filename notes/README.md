@@ -27,6 +27,12 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | ---- | ----- | ------- |
 | [Observability](observability.md) | 🟡 | Monitoring vs. observability, metrics/logs/traces (and wide events), cardinality, RED/USE/Golden Signals, SLOs & error budgets, OpenTelemetry, and sampling. |
 
+## 🔐 Security
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Security Fundamentals](security-fundamentals.md) | 🟢 | The attacker mindset, CIA triad, durable principles (least privilege, fail closed, defense in depth), STRIDE threat modeling, AuthN vs. AuthZ, the OWASP Top 10:2025, injection/XSS/CSRF/IDOR/SSRF, crypto basics, and secrets & supply chain. |
+
 ## 🧰 Tooling & Developer Experience
 
 | Note | Level | Summary |
