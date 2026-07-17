@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-07-16](2026-07-16.md) | Concurrency & parallelism (races, deadlock, primitives, async vs. threads, Amdahl's Law, memory models) |
 | [2026-07-15](2026-07-15.md) | Security fundamentals (STRIDE, OWASP Top 10:2025, authn vs. authz, crypto basics, supply chain) |
 | [2026-07-14](2026-07-14.md) | Observability (metrics/logs/traces, cardinality, RED/USE, SLOs & error budgets, OpenTelemetry) |
 | [2026-07-13](2026-07-13.md) | Caching strategies & invalidation (cache-aside, eviction, stampede/penetration/avalanche) |

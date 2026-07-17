@@ -13,6 +13,12 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Loop Engineering](loop-engineering.md) | 🟡 | Designing the loop an agent runs inside — agent vs. loop, the core cycle, 20 loop design patterns across 5 families, Karpathy's LOOPS.md field notes, and production controls. |
 | [Building an Agent Evaluator](building-agent-evaluators.md) | 🟡 | The verifier half of an agent loop — three levels of eval, outcome vs. trajectory, picking deterministic vs. LLM-as-judge, judge biases & calibration, and evals as versioned datasets. |
 
+## 🧠 Foundations & Systems
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Concurrency & Parallelism](concurrency-parallelism.md) | 🟡 | Concurrency vs. parallelism, shared mutable state & the bugs (races, deadlock, livelock), synchronization primitives, the Coffman conditions, threads/async/actors/CSP, CPU- vs. I/O-bound, Amdahl's Law, and memory models. |
+
 ## 🗄️ Databases & Data
 
 | Note | Level | Summary |

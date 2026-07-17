@@ -77,7 +77,7 @@ In-repo PDFs you can read offline. See [whitepapers/](whitepapers/) for the full
 
 A high-level view of the domains this library covers. Click through to the curated lists.
 
-- **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/)
+- **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/) · [notes/concurrency-parallelism.md](notes/concurrency-parallelism.md)
 - **System Design & Architecture** → [books/](books/) · [papers/](papers/)
 - **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/)
 - **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/) · [notes/database-indexing.md](notes/database-indexing.md) · [notes/database-transactions-isolation.md](notes/database-transactions-isolation.md) · [notes/caching-strategies.md](notes/caching-strategies.md)
