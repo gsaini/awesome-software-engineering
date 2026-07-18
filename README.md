@@ -85,6 +85,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **DevOps, SRE & Reliability** → [books/](books/) · [resources/](resources/) · [notes/observability.md](notes/observability.md)
 - **Security** → [books/](books/) · [papers/](papers/) · [notes/security-fundamentals.md](notes/security-fundamentals.md)
 - **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/) · [notes/cyclomatic-complexity.md](notes/cyclomatic-complexity.md) · [notes/crap-score.md](notes/crap-score.md)
+- **API & Interface Design** → [notes/api-design.md](notes/api-design.md)
 - **Career & Leadership** → [books/](books/) · [resources/](resources/)
 
 ## 🤝 Contributing
