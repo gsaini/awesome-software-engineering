@@ -33,6 +33,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | Note | Level | Summary |
 | ---- | ----- | ------- |
 | [Observability](observability.md) | 🟡 | Monitoring vs. observability, metrics/logs/traces (and wide events), cardinality, RED/USE/Golden Signals, SLOs & error budgets, OpenTelemetry, and sampling. |
+| [Load Balancing & Rate Limiting](load-balancing-rate-limiting.md) | 🟡 | L4 vs. L7, balancing algorithms (least-connections, consistent hashing, power-of-two), health checks & sessions, rate-limiting algorithms (token/leaky bucket, sliding window), distributed limiting, and resilience patterns. |
 
 ## 🔐 Security
 
