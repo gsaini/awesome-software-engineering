@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-07-21](2026-07-21.md) | Testing strategy (pyramid, test doubles, TDD, coverage vs. confidence, mutation testing, flaky tests) |
 | [2026-07-18](2026-07-18.md) | Load balancing & rate limiting (L4/L7, consistent hashing, token/leaky bucket, distributed limiting) |
 | [2026-07-17](2026-07-17.md) | API design — REST/gRPC/GraphQL (verbs & status codes, versioning, idempotency, pagination) |
 | [2026-07-16](2026-07-16.md) | Concurrency & parallelism (races, deadlock, primitives, async vs. threads, Amdahl's Law, memory models) |
