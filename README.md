@@ -79,7 +79,7 @@ A high-level view of the domains this library covers. Click through to the curat
 
 - **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/) · [notes/concurrency-parallelism.md](notes/concurrency-parallelism.md)
 - **System Design & Architecture** → [books/](books/) · [papers/](papers/)
-- **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/)
+- **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/) · [notes/message-queues-event-driven.md](notes/message-queues-event-driven.md)
 - **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/) · [notes/database-indexing.md](notes/database-indexing.md) · [notes/database-transactions-isolation.md](notes/database-transactions-isolation.md) · [notes/caching-strategies.md](notes/caching-strategies.md)
 - **AI & Agentic Engineering** → [whitepapers/ai-agentic-engineering/](whitepapers/ai-agentic-engineering/) · [notes/loop-engineering.md](notes/loop-engineering.md) · [notes/building-agent-evaluators.md](notes/building-agent-evaluators.md)
 - **DevOps, SRE & Reliability** → [books/](books/) · [resources/](resources/) · [notes/observability.md](notes/observability.md) · [notes/load-balancing-rate-limiting.md](notes/load-balancing-rate-limiting.md)
