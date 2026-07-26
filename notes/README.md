@@ -36,6 +36,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Load Balancing & Rate Limiting](load-balancing-rate-limiting.md) | 🟡 | L4 vs. L7, balancing algorithms (least-connections, consistent hashing, power-of-two), health checks & sessions, rate-limiting algorithms (token/leaky bucket, sliding window), distributed limiting, and resilience patterns. |
 | [Message Queues & Event-Driven](message-queues-event-driven.md) | 🟡 | Queues vs. logs, messaging patterns, delivery guarantees (at-least-once + idempotency), ordering & partitioning, retries/DLQs/poison messages, events vs. commands, the dual-write problem (outbox & CDC), and backpressure. |
 | [Consistency Models & CAP](consistency-models-cap.md) | 🔴 | Why replicas disagree, CAP & PACELC, the consistency spectrum (linearizable → eventual), linearizability vs. serializability, session guarantees, quorums (`W+R>N`), conflict resolution (LWW/vector clocks/CRDTs). The capstone tying the library together. |
+| [Distributed Consensus (Raft/Paxos)](distributed-consensus.md) | 🔴 | How CP systems are built: safety vs. liveness, FLP & failure models, replicated state machines, Paxos & Multi-Paxos, Raft (election/replication/safety), majority quorums & odd clusters, split brain, and where consensus is used. |
 
 ## 🔐 Security
 

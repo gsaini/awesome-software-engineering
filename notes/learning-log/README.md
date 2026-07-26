@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-07-25](2026-07-25.md) | Distributed consensus — Raft & Paxos (safety vs. liveness, FLP, replicated logs, quorums, split brain) |
 | [2026-07-24](2026-07-24.md) | Consistency models & CAP (PACELC, linearizability vs. serializability, quorums, CRDTs) — 🏁 capstone |
 | [2026-07-23](2026-07-23.md) | Message queues & event-driven (queues vs. logs, at-least-once, partitioning, DLQs, outbox & CDC) |
 | [2026-07-21](2026-07-21.md) | Testing strategy (pyramid, test doubles, TDD, coverage vs. confidence, mutation testing, flaky tests) |
