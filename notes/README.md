@@ -17,6 +17,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 
 | Note | Level | Summary |
 | ---- | ----- | ------- |
+| [Data Structures & Algorithms](data-structures-algorithms.md) | 🟢 | Big-O, the core structures (array/list/hash map/stack/queue/tree/heap), hashing, graphs & traversals, algorithmic paradigms (two-pointer, binary search, DP, greedy), sorting & searching, and how to pick. |
 | [Concurrency & Parallelism](concurrency-parallelism.md) | 🟡 | Concurrency vs. parallelism, shared mutable state & the bugs (races, deadlock, livelock), synchronization primitives, the Coffman conditions, threads/async/actors/CSP, CPU- vs. I/O-bound, Amdahl's Law, and memory models. |
 | [API Design (REST/gRPC/GraphQL)](api-design.md) | 🟡 | The three styles compared, REST resource/verb/status-code discipline, gRPC & protobuf, GraphQL over/under-fetching & N+1, choosing between them, versioning & evolution, and errors/idempotency/pagination. |
 
