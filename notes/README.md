@@ -46,6 +46,12 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Security Fundamentals](security-fundamentals.md) | 🟢 | The attacker mindset, CIA triad, durable principles (least privilege, fail closed, defense in depth), STRIDE threat modeling, AuthN vs. AuthZ, the OWASP Top 10:2025, injection/XSS/CSRF/IDOR/SSRF, crypto basics, and secrets & supply chain. |
 | [Service-to-Service Authentication](service-to-service-auth.md) | 🟡 | How machines prove identity to each other: the "secret zero" problem, mTLS, OAuth2 client credentials & JWT validation, workload identity (SPIFFE/cloud IAM), bearer vs. sender-constrained tokens, and per-service authz. |
 
+## 🎨 Frontend & UI
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [React Flow](react-flow.md) | 🟢 | Building node-based editors in React (`@xyflow/react`) — the controlled nodes/edges model, handles & viewport, custom nodes/edges, built-in components, auto-layout (Dagre/ELK), hooks, and performance. |
+
 ## 🧰 Tooling & Developer Experience
 
 | Note | Level | Summary |

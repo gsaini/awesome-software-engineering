@@ -86,6 +86,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **Security** → [books/](books/) · [papers/](papers/) · [notes/security-fundamentals.md](notes/security-fundamentals.md) · [notes/service-to-service-auth.md](notes/service-to-service-auth.md)
 - **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/) · [notes/cyclomatic-complexity.md](notes/cyclomatic-complexity.md) · [notes/crap-score.md](notes/crap-score.md) · [notes/testing-strategy.md](notes/testing-strategy.md)
 - **API & Interface Design** → [notes/api-design.md](notes/api-design.md)
+- **Frontend & UI** → [notes/react-flow.md](notes/react-flow.md)
 - **Career & Leadership** → [books/](books/) · [resources/](resources/)
 
 ## 🤝 Contributing

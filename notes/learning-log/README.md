@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-07-28](2026-07-28.md) | React Flow — node-based editors in React (controlled nodes/edges, custom nodes, auto-layout, perf) |
 | [2026-07-27](2026-07-27.md) | Service-to-service authentication (mTLS, OAuth2 client credentials, JWT, SPIFFE/workload identity) |
 | [2026-07-26](2026-07-26.md) | Data structures & algorithms (Big-O, hash maps/trees/heaps/graphs, paradigms, sorting) — foundations |
 | [2026-07-25](2026-07-25.md) | Distributed consensus — Raft & Paxos (safety vs. liveness, FLP, replicated logs, quorums, split brain) |
