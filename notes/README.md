@@ -52,6 +52,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | Note | Level | Summary |
 | ---- | ----- | ------- |
 | [React Flow](react-flow.md) | 🟢 | Building node-based editors in React (`@xyflow/react`) — the controlled nodes/edges model, handles & viewport, custom nodes/edges, built-in components, auto-layout (Dagre/ELK), hooks, and performance. |
+| [Exposing React to Other Apps](exposing-react-to-other-apps.md) | 🟡 | Every way to share a React component/app: npm library, Module Federation, Web Components, embeddable widgets, iframes, route mapping (reverse-proxy/Multi-Zones), orchestrators & server composition — with a decision guide. |
 
 ## 🧰 Tooling & Developer Experience
 
