@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-08-04](2026-08-04.md) | Durable execution (Temporal) — event history & replay, workflows vs. activities, sagas, determinism |
 | [2026-08-03](2026-08-03.md) | Model Context Protocol (MCP) — the 2026-07-28 stateless spec, tools/resources/prompts, agent tooling |
 | [2026-07-29](2026-07-29.md) | Serialization & schema evolution (JSON/Protobuf/Avro, forward/backward compat, schema registries) |
 | [2026-07-28](2026-07-28.md) | React Flow — node-based editors in React (controlled nodes/edges, custom nodes, auto-layout, perf) |
