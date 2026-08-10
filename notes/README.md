@@ -62,6 +62,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | ---- | ----- | ------- |
 | [pnpm Tips & Capabilities (v11)](pnpm-tips.md) | 🟢 | Why pnpm's store + strict `node_modules` are different, an everyday cheat sheet, workspaces & filtering, catalogs, overrides & patching, and what's new/secure-by-default in v11. |
 | [Knip](knip.md) | 🟢 | Find (and fix) unused files, dependencies, and exports in JS/TS — how it works via entry/project graph analysis, plugins, `--fix`, production mode & CI, and taming false positives. |
+| [commitlint](commitlint.md) | 🟢 | Lint commit messages to Conventional Commits — how it works (config + commit-msg hook + CI), the benefits (readable history, automated semver & changelogs), and the release-automation ecosystem it unlocks. |
 
 ## 🛠️ Software Craft & Code Quality
 
