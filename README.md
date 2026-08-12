@@ -77,7 +77,7 @@ In-repo PDFs you can read offline. See [whitepapers/](whitepapers/) for the full
 
 A high-level view of the domains this library covers. Click through to the curated lists.
 
-- **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/) · [notes/data-structures-algorithms.md](notes/data-structures-algorithms.md) · [notes/concurrency-parallelism.md](notes/concurrency-parallelism.md)
+- **Foundations** — data structures, algorithms, CS basics → [books/](books/) · [roadmaps/](roadmaps/) · [notes/data-structures-algorithms.md](notes/data-structures-algorithms.md) · [notes/concurrency-parallelism.md](notes/concurrency-parallelism.md) · [notes/git-internals.md](notes/git-internals.md)
 - **System Design & Architecture** → [books/](books/) · [papers/](papers/)
 - **Distributed Systems** → [whitepapers/distributed-systems/](whitepapers/distributed-systems/) · [papers/](papers/) · [notes/message-queues-event-driven.md](notes/message-queues-event-driven.md) · [notes/consistency-models-cap.md](notes/consistency-models-cap.md) · [notes/distributed-consensus.md](notes/distributed-consensus.md)
 - **Databases & Data** → [whitepapers/databases-data/](whitepapers/databases-data/) · [books/](books/) · [notes/database-indexing.md](notes/database-indexing.md) · [notes/database-transactions-isolation.md](notes/database-transactions-isolation.md) · [notes/caching-strategies.md](notes/caching-strategies.md) · [notes/serialization-schema-evolution.md](notes/serialization-schema-evolution.md)
