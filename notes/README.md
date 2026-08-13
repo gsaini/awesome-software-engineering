@@ -49,6 +49,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | ---- | ----- | ------- |
 | [Security Fundamentals](security-fundamentals.md) | 🟢 | The attacker mindset, CIA triad, durable principles (least privilege, fail closed, defense in depth), STRIDE threat modeling, AuthN vs. AuthZ, the OWASP Top 10:2025, injection/XSS/CSRF/IDOR/SSRF, crypto basics, and secrets & supply chain. |
 | [Service-to-Service Authentication](service-to-service-auth.md) | 🟡 | How machines prove identity to each other: the "secret zero" problem, mTLS, OAuth2 client credentials & JWT validation, workload identity (SPIFFE/cloud IAM), bearer vs. sender-constrained tokens, and per-service authz. |
+| [OAuth 2.0, OIDC & SSO](oauth-oidc-sso.md) | 🟡 | User/browser auth: OAuth vs. OIDC, Authorization Code + PKCE, the three tokens, SSO via a shared IdP session, **silent SSO** (`prompt=none`) & its third-party-cookie demise, token storage & the BFF pattern, and logout. |
 
 ## 🎨 Frontend & UI
 
