@@ -39,6 +39,7 @@ awesome-software-engineering/
 ├── papers/               # Classic & modern academic papers (links + notes)
 ├── courses/              # Free & paid courses, lectures, video series
 ├── notes/                # Original, self-authored deep-dive study notes
+├── examples/             # Small, runnable code examples that accompany the notes
 ├── roadmaps/             # Step-by-step learning paths from zero to senior
 └── resources/            # Blogs, newsletters, podcasts, and reference sites
 ```

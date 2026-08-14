@@ -186,6 +186,8 @@ On multicore hardware, threads don't automatically see each other's writes in or
 
 ## 10. Go deeper
 
+> 🧑‍💻 **Runnable example:** [examples/java-multithreading](../examples/java-multithreading/) — the smallest Java program that runs two threads concurrently (`Runnable` + `start()` + `join()`).
+
 Related material in this library:
 
 - 📝 **[Transactions & Isolation Levels](database-transactions-isolation.md)** — the same hazards (lost update, deadlock) at the database layer; locking (2PL) vs. MVCC is this note's mutex-vs-optimistic story writ large.
