@@ -13,6 +13,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Loop Engineering](loop-engineering.md) | 🟡 | Designing the loop an agent runs inside — agent vs. loop, the core cycle, 20 loop design patterns across 5 families, Karpathy's LOOPS.md field notes, and production controls. |
 | [Building an Agent Evaluator](building-agent-evaluators.md) | 🟡 | The verifier half of an agent loop — three levels of eval, outcome vs. trajectory, picking deterministic vs. LLM-as-judge, judge biases & calibration, and evals as versioned datasets. |
 | [Model Context Protocol (MCP)](model-context-protocol.md) | 🟡 | The open standard connecting AI agents to tools & data — host/client/server, the three primitives (tools/resources/prompts), transports, the 2026-07-28 stateless spec, and the security model. |
+| [Graph Engineering](graph-engineering.md) | 🟡 | Building AI systems as explicit graphs — execution/orchestration graphs (nodes/edges/state, LangGraph) vs. knowledge graphs (GraphRAG), graphs-vs-loops, and why it's durable execution for agents. |
 
 ## 🧠 Foundations & Systems
 
