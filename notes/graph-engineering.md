@@ -77,7 +77,7 @@ Three primitives:
 Making the topology explicit unlocks capabilities a free-form loop makes hard:
 
 - **Conditional routing** — branch on state (route to the right specialist; escalate on low confidence).
-- **Parallel fan-out / fan-in** — run independent nodes concurrently, then merge (the `parallel()` shape from your [concurrency note](concurrency-parallelism.md), across agents).
+- **Parallel fan-out / fan-in** — run independent nodes concurrently, then merge (the `parallel()` shape from your [concurrency note](concurrency-parallelism.md), across agents). The canonical shape is the **Diamond Pattern**: **fan out → reduce → synthesize** — split the task across parallel workers, combine their results, then have a final node synthesize the answer. It's what powers Claude's multi-agent research feature.
 - **Cycles** — a node can loop back (retry, refine) — graphs here are *not* strictly DAGs; controlled cycles are the point (evaluator → generator → evaluator).
 - **Human-in-the-loop interrupts** — pause at a node for approval and resume later — a **durable checkpoint**, not a blocking wait.
 - **Durable state & persistence** — state survives across steps and sessions; a crashed run resumes from its last checkpoint.
@@ -165,6 +165,7 @@ If none of those hold — a single retryable task, state fitting in one loop —
 - **Model state explicitly** (a typed schema with clear reducers), not free-form chat history.
 - **Use checkpointing** for durability and human-in-the-loop.
 - **Make the graph observable** — trace the path each request took; evaluate the [trajectory](building-agent-evaluators.md), not just the outcome.
+- **Give verifiers separate contexts from workers** — a validator node must reason from its *own* context, not the worker's, or you get **circular validation** (the model rubber-stamps its own output). This is the [agent-evaluator](building-agent-evaluators.md) rule — *never let the loop grade its own work* — enforced by the graph's node boundaries.
 - **Go hybrid on retrieval** — vector RAG for lookups, graph traversal for relationships.
 
 **Avoid**
@@ -190,6 +191,7 @@ This note sits at the intersection of much of the library:
 ### Primary references
 
 - [Towards AI — *Graph Engineering* article](https://x.com/towards_AI/article/2078892237287801283) (X Article, 2026) — the piece that prompted this note.
+- Anatoli Kopadze — *["Graph Engineering explained: what it is, when to use it and when not to"](https://x.com/AnatoliKopadze/status/2080668775796314331)* (2026) — source of the **Diamond Pattern** (fan-out → reduce → synthesize) and the separate-verifier-context rule.
 - [LangGraph documentation](https://langchain-ai.github.io/langgraph/) — the reference execution-graph framework.
 - [Microsoft GraphRAG](https://microsoft.github.io/graphrag/) — knowledge-graph-based retrieval.
 - Analytics Vidhya / AI Builder Club — *"Graph Engineering for AI Agents"* guides (2026), where the term was popularized.
