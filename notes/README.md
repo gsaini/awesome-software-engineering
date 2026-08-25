@@ -59,6 +59,15 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [React Flow](react-flow.md) | 🟢 | Building node-based editors in React (`@xyflow/react`) — the controlled nodes/edges model, handles & viewport, custom nodes/edges, built-in components, auto-layout (Dagre/ELK), hooks, and performance. |
 | [Exposing React to Other Apps](exposing-react-to-other-apps.md) | 🟡 | Every way to share a React component/app: npm library, Module Federation, Web Components, embeddable widgets, iframes, route mapping (reverse-proxy/Multi-Zones), orchestrators & server composition — with a decision guide. |
 
+## 🌐 Web Performance & Quality
+
+| Note | Level | Summary |
+| ---- | ----- | ------- |
+| [Web Quality & Lighthouse](web-quality-lighthouse.md) | 🟢 | The hub — the four pillars (perf/a11y/SEO/best-practices), Lighthouse 13, field vs. lab measurement, security, and the evidence-led audit workflow. |
+| [Core Web Vitals & Performance](web-core-vitals-performance.md) | 🟡 | Measure-first performance — CrUX/RUM vs. lab, LCP/INP/CLS with causes & fixes, performance budgets, and the critical rendering path. |
+| [Web Accessibility (a11y)](web-accessibility.md) | 🟢 | WCAG 2.2 & POUR, why automated ≠ conformance, the high-impact fixes, semantic HTML & the accessibility tree, ARIA, and keyboard/screen-reader testing. |
+| [Technical SEO](web-seo.md) | 🟢 | Crawl → index → rank, crawlability & indexability, metadata & canonicals, structured data (JSON-LD), JS/SSR rendering, and page experience. |
+
 ## 🧰 Tooling & Developer Experience
 
 | Note | Level | Summary |

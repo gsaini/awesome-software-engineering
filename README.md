@@ -88,6 +88,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/) · [notes/cyclomatic-complexity.md](notes/cyclomatic-complexity.md) · [notes/crap-score.md](notes/crap-score.md) · [notes/testing-strategy.md](notes/testing-strategy.md)
 - **API & Interface Design** → [notes/api-design.md](notes/api-design.md)
 - **Frontend & UI** → [notes/react-flow.md](notes/react-flow.md)
+- **Web Performance & Quality** — Core Web Vitals, a11y, SEO, Lighthouse → [notes/web-quality-lighthouse.md](notes/web-quality-lighthouse.md) · [notes/web-core-vitals-performance.md](notes/web-core-vitals-performance.md) · [notes/web-accessibility.md](notes/web-accessibility.md) · [notes/web-seo.md](notes/web-seo.md)
 - **Career & Leadership** → [books/](books/) · [resources/](resources/)
 
 ## 🤝 Contributing
