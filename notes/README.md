@@ -84,6 +84,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Cyclomatic Complexity](cyclomatic-complexity.md) | 🟢 | McCabe's metric — counting independent paths, how to calculate it, what the number means, and how to reduce it. |
 | [CRAP Score](crap-score.md) | 🟡 | Change Risk Anti-Patterns — combining complexity and test coverage into one change-risk number, with the formula, thresholds, and the test-vs-refactor trade-off. |
 | [Testing Strategy](testing-strategy.md) | 🟡 | The test pyramid (and rivals), the kinds of tests, test doubles & the two schools, FIRST/AAA, TDD, coverage vs. confidence & mutation testing, and taming flaky tests. |
+| [Constraint-Driven Development](constraint-driven-development.md) | 🟡 | Letting machine-checked constraints (types, contracts, tests, schemas, arch rules, specs) drive & bound development — the cost ladder, CDD vs. TDD vs. spec-driven, why it's load-bearing for AI agents, and making illegal states unrepresentable. |
 
 ---
 
