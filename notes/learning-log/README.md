@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-09-02](2026-09-02.md) | Infrastructure as Code / Terraform (declarative state, plan/apply, state mgmt, drift, policy-as-code) |
 | [2026-08-31](2026-08-31.md) | Database sharding & partitioning (range/hash/consistent-hashing, shard key, hotspots, rebalancing, cross-shard) |
 | [2026-08-10](2026-08-10.md) | Git internals & workflows (object model, content-addressing, refs, merge vs. rebase, reflog) |
 | [2026-08-04](2026-08-04.md) | Durable execution (Temporal) — event history & replay, workflows vs. activities, sagas, determinism |
