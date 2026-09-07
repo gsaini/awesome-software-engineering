@@ -89,6 +89,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [CRAP Score](crap-score.md) | 🟡 | Change Risk Anti-Patterns — combining complexity and test coverage into one change-risk number, with the formula, thresholds, and the test-vs-refactor trade-off. |
 | [Testing Strategy](testing-strategy.md) | 🟡 | The test pyramid (and rivals), the kinds of tests, test doubles & the two schools, FIRST/AAA, TDD, coverage vs. confidence & mutation testing, and taming flaky tests. |
 | [Constraint-Driven Development](constraint-driven-development.md) | 🟡 | Letting machine-checked constraints (types, contracts, tests, schemas, arch rules, specs) drive & bound development — the cost ladder, CDD vs. TDD vs. spec-driven, why it's load-bearing for AI agents, and making illegal states unrepresentable. |
+| [OpenSpec Across Multiple Repos](openspec-multi-repo.md) | 🟡 | Spec-driven development across a UI / BFF / service split — local vs. cross-cutting specs, the OpenSpec Store & cross-repo changes, contracts as the enforced artifact, coordinating a cross-repo change, and monorepo vs. polyrepo. |
 
 ---
 
