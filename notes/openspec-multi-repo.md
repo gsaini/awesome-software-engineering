@@ -6,6 +6,8 @@ When a product spans several related repos — a **UI**, a **UI Service (BFF)**,
 
 > **The reframe that unlocks it:** there are **two kinds of spec**, and they belong in different places. **Local specs** describe what *one* repo does internally — they live *in that repo*, with the code, owned by that team. **Cross-cutting specs and the contracts between repos** are shared and must not drift — they need a **single source of truth**. Nearly every failure here is putting a *shared* thing (a contract) in a *local* place (one repo) and watching it diverge.
 
+> 🧑‍💻 **Copyable scaffold:** [examples/openspec-multi-repo](../examples/openspec-multi-repo/) — a working template of the structure below (Store + three repo skeletons + a worked cross-repo change).
+
 ## Table of contents
 
 - [1. What OpenSpec gives you](#1-what-openspec-gives-you)

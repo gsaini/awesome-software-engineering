@@ -5,6 +5,7 @@ Small, self-contained, **runnable** code examples that accompany the [study note
 | Example | Language | Accompanies |
 | ------- | -------- | ----------- |
 | [java-multithreading](java-multithreading/) | Java | [Concurrency & Parallelism](../notes/concurrency-parallelism.md) |
+| [openspec-multi-repo](openspec-multi-repo/) | Markdown / scaffold | [OpenSpec Across Multiple Repos](../notes/openspec-multi-repo.md) |
 
 ---
 
