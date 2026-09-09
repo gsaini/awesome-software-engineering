@@ -29,6 +29,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | Note | Level | Summary |
 | ---- | ----- | ------- |
 | [Database Indexing](database-indexing.md) | 🟡 | What indexes are, B+Trees vs. LSM-trees, clustered vs. non-clustered, composite & covering indexes, costs, and how to read `EXPLAIN`. |
+| [Database Optimization & Performance Checklist](database-optimization-performance-checklist.md) | 🟡 | A practical checklist for query-plan review, index health, schema design, transactions, caching, monitoring, and capacity tuning in real systems. |
 | [Database Transactions & Isolation Levels](database-transactions-isolation.md) | 🟡 | ACID, the concurrency anomalies, the four isolation levels, locking vs. MVCC, snapshot isolation & write skew, and real-engine defaults. |
 | [Caching Strategies & Invalidation](caching-strategies.md) | 🟡 | Where caches live, read/write patterns (cache-aside, write-through/back), eviction, invalidation approaches, the stampede/penetration/avalanche failure modes, and staleness. |
 | [Database Sharding & Partitioning](database-sharding-partitioning.md) | 🔴 | Splitting data across nodes to scale — range/hash/consistent-hashing/directory strategies, choosing the shard key, hotspots & skew, rebalancing, request routing, and the cross-shard hard parts. |
