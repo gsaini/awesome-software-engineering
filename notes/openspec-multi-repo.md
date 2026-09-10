@@ -15,10 +15,11 @@ When a product spans several related repos — a **UI**, a **UI Service (BFF)**,
 - [3. The recommended structure](#3-the-recommended-structure)
 - [4. Contracts are the real artifact](#4-contracts-are-the-real-artifact)
 - [5. Coordinating a cross-repo change](#5-coordinating-a-cross-repo-change)
-- [6. Making it agent-ready](#6-making-it-agent-ready)
-- [7. Monorepo vs. polyrepo decision](#7-monorepo-vs-polyrepo-decision)
-- [8. Best practices & anti-patterns](#8-best-practices--anti-patterns)
-- [9. Go deeper](#9-go-deeper)
+- [6. Archiving a completed change](#6-archiving-a-completed-change)
+- [7. Making it agent-ready](#7-making-it-agent-ready)
+- [8. Monorepo vs. polyrepo decision](#8-monorepo-vs-polyrepo-decision)
+- [9. Best practices & anti-patterns](#9-best-practices--anti-patterns)
+- [10. Go deeper](#10-go-deeper)
 
 ---
 
@@ -92,7 +93,66 @@ The hard case — a feature spanning all three:
 
 ---
 
-## 6. Making it agent-ready
+## 6. Archiving a completed change
+
+Archiving is what turns a proposal into **the truth**: the delta specs merge into
+`openspec/specs/`, and the change moves into `openspec/changes/archive/`. Two *distinct*
+steps sit at the end of the lifecycle:
+
+```text
+/opsx:propose → /opsx:apply → /opsx:verify → /opsx:sync → /opsx:archive
+                 (implement)   (optional)   (merge deltas)  (finalize)
+```
+
+- **`/opsx:sync`** merges the delta specs (`ADDED` / `MODIFIED` / `REMOVED`) into the main specs.
+- **`/opsx:archive`** moves the change into `openspec/changes/archive/<date>-<change-name>/`.
+
+`archive` offers to sync first when unmerged deltas exist, so one command usually suffices —
+but they are separable, which is why *"archived"* and *"specs updated"* are not the same thing.
+
+### What archive does
+
+1. **Validates** — proposal validation is advisory, but the **rebuilt spec is validated after the
+   merge** and *does* block the write to `specs/`.
+2. **Applies the deltas** into the capability spec (the new source of truth).
+3. **Moves** the change folder into the dated archive.
+
+### The commands
+
+| Command | When |
+| ------- | ---- |
+| `openspec validate <change>` | Optional pre-flight |
+| `openspec archive` | Interactive — pick a change, confirm |
+| `openspec archive <change>` | A specific change |
+| `openspec archive <change> --yes` | **Agents, CI, scripts** — anything that can't answer a prompt |
+| `openspec archive <change> --skip-specs` | A change with no spec impact (or set `skip_specs: true` in its `.openspec.yaml`) |
+| `--no-validate` | Escape hatch. ⚠️ Also **disables capability retirement** — no verdict, nothing retired |
+
+Retire a capability entirely with `retire_capabilities: true` in the change's `.openspec.yaml`.
+
+### The cross-repo rule ⭐
+
+- **Per-repo local changes** — archive **independently**, as soon as that repo's work merges.
+- **The Store's cross-repo change** — archive **only when the _last_ repo has shipped.**
+
+Archiving declares *"this is how the system works now."* Archive after the provider deploys but
+before the consumer does, and the Store asserts an end-to-end behaviour that doesn't exist yet —
+**the Store becomes fiction**, the precise failure this whole structure exists to prevent.
+
+**The gate before archiving a cross-repo change:**
+
+1. All per-repo tasks checked off in the Store's `tasks.md`
+2. Contract tests green on **both** provider and consumer
+3. All repos **deployed** — not merely merged
+4. *Then* sync + archive in the Store
+
+> With the **stores** feature you can run `archive` (and `list` / `show` / `status` / `validate`)
+> against a registered store from anywhere via `--store <id>` — no need to `cd` into `platform-spec`.
+> ⚠️ Stores are flagged **beta**: command names, flags, and file formats may change between releases.
+
+---
+
+## 7. Making it agent-ready
 
 The real payoff of doing this with OpenSpec is **AI coding agents that don't wander outside the contract**:
 
@@ -101,7 +161,7 @@ The real payoff of doing this with OpenSpec is **AI coding agents that don't wan
 
 ---
 
-## 7. Monorepo vs. polyrepo decision
+## 8. Monorepo vs. polyrepo decision
 
 The choice that sits above all of this:
 
@@ -114,13 +174,14 @@ Either way the invariant holds: **local specs live with their repo; the contract
 
 ---
 
-## 8. Best practices & anti-patterns
+## 9. Best practices & anti-patterns
 
 **Do**
 - **Split local vs. cross-cutting specs** — the foundational decision.
 - **Own inter-service contracts in one place** (Store or shared package), **versioned** and **contract-tested in CI**.
 - **One cross-repo change + shared change ID** for anything spanning repos; contract-first, provider→consumer, additive.
 - **Point each repo's `AGENTS.md`/`CLAUDE.md` at the Store & contracts** so agents honor them.
+- **Archive per-repo changes independently**, but archive the Store's cross-repo change **only after the last repo ships**.
 - **Consider a monorepo** if the three deploy together — it makes cross-cutting spec changes trivial.
 
 **Avoid**
@@ -128,11 +189,13 @@ Either way the invariant holds: **local specs live with their repo; the contract
 - **A Store/spec repo with no enforcement** → it drifts from code into fiction.
 - **Coordinating cross-repo changes only in chat** instead of one linked change.
 - **Breaking a contract with no compatibility window** → forces a lockstep deploy across three repos.
+- **Archiving a cross-repo change before every repo has deployed** → the Store starts asserting behaviour that doesn't exist.
+- **Forgetting `--yes`** when an agent or CI job runs `archive` → the run hangs on a prompt.
 - **Letting an agent change one side of a contract** without the other (or without a contract test catching it).
 
 ---
 
-## 9. Go deeper
+## 10. Go deeper
 
 Related material in this library:
 
