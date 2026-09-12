@@ -10,6 +10,11 @@ The moment you keep **more than one copy** of data — for availability, latency
 
 - [1. Why copies disagree](#1-why-copies-disagree)
 - [2. The CAP theorem](#2-the-cap-theorem)
+  - [The formal statement & the proof](#the-formal-statement--and-the-proof-in-one-paragraph)
+  - [Harvest & yield](#harvest--yield--a-far-more-useful-dial)
+  - [Brewer's revision: not "2 of 3"](#brewers-own-revision-cap-is-not-2-of-3)
+  - [The modern critique](#the-modern-critique-stop-labelling-databases-cp-or-ap)
+  - [How a partition is detected](#how-a-partition-is-actually-detected)
 - [3. PACELC — the better framing](#3-pacelc--the-better-framing)
 - [4. The consistency spectrum](#4-the-consistency-spectrum)
 - [5. Linearizability vs. serializability](#5-linearizability-vs-serializability)
@@ -57,6 +62,77 @@ Given three properties, a distributed system can guarantee only **two**:
 ```
 
 > ⚠️ Common misreadings to avoid: (1) CAP is **only about the partition moment** — when the network is healthy you can have *both* C and A. (2) CAP's "C" is **linearizability**, *not* the ACID "C" (which is about invariants) — [same word, different meaning](database-transactions-isolation.md). (3) "CA" systems aren't really a thing in distributed computing — you can't opt out of partitions.
+
+### The formal statement — and the proof in one paragraph
+
+Brewer **conjectured** CAP in a 2000 PODC keynote; **Gilbert & Lynch proved it formally in 2002**
+for the asynchronous network model. The proof is genuinely simple — you can reconstruct it from memory:
+
+```
+Two replicas N1 and N2 both hold v0.  A partition severs them.
+   Client writes v1 → N1.   N1 cannot reach N2.
+   Client then reads from N2:
+     • N2 answers  → it returns the stale v0   → NOT linearizable
+     • N2 refuses / blocks to stay correct     → NOT available
+   Under partition you cannot have both. ∎
+```
+
+That's the whole theorem. Everything else is interpretation.
+
+### Harvest & yield — a far more useful dial
+
+Fox & Brewer's earlier work (*"Harvest, Yield, and Scalable Tolerant Systems"*, 1999) gives the
+**continuous** version of CAP's binary availability, and it's more practical:
+
+- **Yield** — the probability of completing a request (availability, as a *fraction*, not a boolean).
+- **Harvest** — the fraction of the data reflected in the answer (**completeness**).
+
+So instead of "up or down," you can **degrade gracefully**: return a search over 90% of the index
+(reduced harvest) rather than failing (reduced yield). This is the [load-shedding / graceful-degradation](load-balancing-rate-limiting.md)
+instinct, formalised — and it's usually the *right* answer in practice, which binary CAP can't express.
+
+### Brewer's own revision: CAP is not "2 of 3"
+
+In **"CAP Twelve Years Later" (2012)**, Brewer pushed back on his own framing. The "pick 2 of 3"
+slogan is misleading because **partitions are rare**, so there's no reason to forfeit C *or* A the
+rest of the time. His modern framing is **explicit partition management** — a three-step cycle:
+
+1. **Detect** the partition.
+2. **Enter partition mode** — deliberately limit some operations (block risky ones, or log intent to reconcile later).
+3. **Recover** when it heals — restore consistency *and* **compensate** for anything done wrongly during partition mode.
+
+Crucially, the choice is **not global**: it's per-operation, per-invariant. Some invariants tolerate
+delay and compensation (a duplicate shipment can be refunded); some cannot (don't double-spend). That
+compensation step is the [saga](message-queues-event-driven.md) pattern — CAP recovery *is* compensating transactions.
+
+### The modern critique: stop labelling databases "CP" or "AP"
+
+Kleppmann's *"A Critique of the CAP Theorem"* (2015) is the corrective worth internalising:
+
+- **CAP's "availability" is formally useless operationally** — it only requires that a non-failed node
+  *eventually* returns a response, with **no latency bound**. A system that answers in 100 years is
+  "available" under CAP. That is not what anyone means by available.
+- **CAP says nothing about latency**, which is what actually hurts every day — hence PACELC (§3).
+- **Real systems don't fit the labels.** Most databases are neither cleanly CP nor AP; they offer
+  tunable, partial guarantees, and often don't even deliver the one they advertise.
+- Better tools exist: **precise consistency models** (linearizable, causal, …) as in §4.
+
+> **How to hold it:** CAP is excellent *intuition* — "under a partition you must choose" — and a poor
+> *classification system*. Use it to reason; use consistency models to specify.
+
+### How a partition is actually detected
+
+There is no "partition" signal. You infer one from a **timeout** — and a timeout **cannot distinguish
+a partitioned node from a slow node from a crashed one.** That's the [FLP](distributed-consensus.md)
+intuition again: in an asynchronous network, slow and dead look identical.
+
+So "enter partition mode" always fires on a **heuristic**:
+
+- **Timeout too short** → false partitions: spurious failovers and needless unavailability.
+- **Timeout too long** → slow detection: a longer real outage before you react.
+
+This is precisely why [split-brain](multi-region-deployment.md) and failover tuning are hard — the
+theory says "when partitioned, choose," but production has to *guess* when that moment arrived.
 
 ---
 
@@ -222,6 +298,9 @@ This note is the hub the rest of the library has been pointing at:
 ### Primary references
 
 - E. Brewer, *"CAP Twelve Years Later: How the 'Rules' Have Changed,"* 2012.
+- Gilbert & Lynch, *"Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services,"* 2002 — the formal proof.
+- Fox & Brewer, *"Harvest, Yield, and Scalable Tolerant Systems,"* 1999 — the harvest/yield dial.
+- M. Kleppmann, *"A Critique of the CAP Theorem,"* 2015 — why "CP/AP" labels mislead.
 - D. Abadi, *"Consistency Tradeoffs in Modern Distributed Database System Design (PACELC),"* 2012.
 - Herlihy & Wing, *"Linearizability: A Correctness Condition for Concurrent Objects,"* 1990.
 - Kleppmann, *Designing Data-Intensive Applications*, Ch. 5 & 9.
