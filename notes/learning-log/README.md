@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-09-17](2026-09-17.md) | Feature flags & progressive delivery (deploy ≠ release, flag types, canary/blue-green, expand/contract, flag debt) |
 | [2026-09-12](2026-09-12.md) | Stream processing (event time & watermarks, windowing, stream–table duality, exactly-once, Kappa) |
 | [2026-09-11](2026-09-11.md) | CAP deepened — the Gilbert–Lynch proof, harvest & yield, Brewer's revision, the critique, partition detection |
 | [2026-09-04](2026-09-04.md) | Containers & orchestration (namespaces/cgroups, images/layers, Docker/OCI, Kubernetes reconcile loop & objects) |
