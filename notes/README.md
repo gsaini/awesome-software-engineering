@@ -15,6 +15,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 | [Model Context Protocol (MCP)](model-context-protocol.md) | 🟡 | The open standard connecting AI agents to tools & data — host/client/server, the three primitives (tools/resources/prompts), transports, the 2026-07-28 stateless spec, and the security model. |
 | [Why Spec-Driven Development Is Essential for Agentic SE](spec-driven-development-agentic.md) | 🟡 | The *why now*: code generation got cheap so intent & verification became the bottleneck; the prompt-patch failure loop, the four forces (ambiguity, durable context, separate verification, parallel agents), what an agent-ready spec contains (EARS), spec-anchored *not* spec-as-source, the 2026 tooling convergence, and the counterarguments. |
 | [Graph Engineering](graph-engineering.md) | 🟡 | Building AI systems as explicit graphs — execution/orchestration graphs (nodes/edges/state, LangGraph) vs. knowledge graphs (GraphRAG), graphs-vs-loops, and why it's durable execution for agents. |
+| [Jev Ultrafast — A Browser Agent That Chooses Instead of Generating](jev-ultrafast.md) | 🟡 | Browser Use's ~7 s browser agent as a case study: a dynamic indexed action space, one request for operation + speculative target heads (TypeSafe Jev, a "System One" model), a small LLM only for `TYPE_TEXT`, DOM state instead of screenshots, safety by construction (no retried mutations, DONE ≠ success), and honestly-bounded evidence. |
 
 ## 🧠 Foundations & Systems
 
