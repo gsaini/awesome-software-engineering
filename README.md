@@ -87,7 +87,7 @@ A high-level view of the domains this library covers. Click through to the curat
 - **Security** → [books/](books/) · [papers/](papers/) · [notes/security-fundamentals.md](notes/security-fundamentals.md) · [notes/service-to-service-auth.md](notes/service-to-service-auth.md)
 - **Software Craft & Practices** — clean code, testing, refactoring → [books/](books/) · [notes/cyclomatic-complexity.md](notes/cyclomatic-complexity.md) · [notes/crap-score.md](notes/crap-score.md) · [notes/testing-strategy.md](notes/testing-strategy.md) · [notes/constraint-driven-development.md](notes/constraint-driven-development.md)
 - **API & Interface Design** → [notes/api-design.md](notes/api-design.md)
-- **Frontend & UI** → [notes/react-flow.md](notes/react-flow.md) · [notes/react-19-3.md](notes/react-19-3.md) · [notes/exposing-react-to-other-apps.md](notes/exposing-react-to-other-apps.md)
+- **Frontend & UI** → [notes/css-single-axis-scroll-containers.md](notes/css-single-axis-scroll-containers.md) · [notes/react-flow.md](notes/react-flow.md) · [notes/react-19-3.md](notes/react-19-3.md) · [notes/exposing-react-to-other-apps.md](notes/exposing-react-to-other-apps.md)
 - **Web Performance & Quality** — Core Web Vitals, a11y, SEO, Lighthouse → [notes/web-quality-lighthouse.md](notes/web-quality-lighthouse.md) · [notes/web-core-vitals-performance.md](notes/web-core-vitals-performance.md) · [notes/web-accessibility.md](notes/web-accessibility.md) · [notes/web-seo.md](notes/web-seo.md)
 - **Career & Leadership** → [books/](books/) · [resources/](resources/)
 

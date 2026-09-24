@@ -65,6 +65,7 @@ Levels: 🟢 Beginner · 🟡 Intermediate · 🔴 Advanced.
 
 | Note | Level | Summary |
 | ---- | ----- | ------- |
+| [Single-Axis Scroll Containers](css-single-axis-scroll-containers.md) | 🟡 | CSS finally gets a one-axis scroller: `overflow: auto clip`, why one scrollable axis used to drag the other along, per-axis `position: sticky` (the sticky header *and* column table), the four side effects to test, `@supports named-feature()` vs. the value check that lies, and Chrome's rollout status. |
 | [React Flow](react-flow.md) | 🟢 | Building node-based editors in React (`@xyflow/react`) — the controlled nodes/edges model, handles & viewport, custom nodes/edges, built-in components, auto-layout (Dagre/ELK), hooks, and performance. |
 | [React 19.3 — Release Summary](react-19-3.md) | 🟡 | What shipped 2026-09-09: View Transitions & Fragment Refs go stable, `addTransitionType`, the new `browser()` SSR opt-out, Trusted Types support, and RSC Context without a Provider. No breaking changes. |
 | [Exposing React to Other Apps](exposing-react-to-other-apps.md) | 🟡 | Every way to share a React component/app: npm library, Module Federation, Web Components, embeddable widgets, iframes, route mapping (reverse-proxy/Multi-Zones), orchestrators & server composition — with a decision guide. |
