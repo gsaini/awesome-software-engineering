@@ -165,6 +165,7 @@ Now the part worth admiring — the authors are unusually explicit about what th
 
 Related material in this library:
 
+- 📝 **[Browser Harness](browser-harness.md)** — the same team's opposite design: raw CDP, and the agent writes its own tools.
 - 📝 **[Constraint-Driven Development](constraint-driven-development.md)** — "make illegal states unrepresentable"; the indexed action space is the textbook case.
 - 📝 **[Why Spec-Driven Development Is Essential for Agentic SE](spec-driven-development-agentic.md)** — agents are good at generating, bad at guessing; Jev removes most of the generation surface entirely.
 - 📝 **[Loop Engineering](loop-engineering.md)** — a tiny, explicit loop: page → indexed elements → operation + target → execute.
