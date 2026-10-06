@@ -186,6 +186,7 @@ This note sits at the intersection of much of the library:
 - 📝 **[Data Structures & Algorithms](data-structures-algorithms.md)** — nodes + edges + traversal; an execution graph is *the* graph structure, made runnable.
 - 📝 **[React Flow](react-flow.md)** — the same node/edge model, made *visible* — a natural way to render/inspect an agent graph.
 - 📝 **[Building an Agent Evaluator](building-agent-evaluators.md)** — a trajectory is a path through the graph; validators are nodes.
+- 📝 **[Critique Agents as a Graph](critique-agent-graph.md)** — one pattern worked end to end: the prompts for each node, and a code gate that critiques the critic.
 - 📝 **[Model Context Protocol](model-context-protocol.md)** — the tools that graph nodes call.
 
 ### Primary references
