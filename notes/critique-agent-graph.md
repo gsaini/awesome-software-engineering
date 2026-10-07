@@ -356,6 +356,7 @@ Related material in this library:
 - 📝 **[Loop Engineering](loop-engineering.md)**: the critique loop as a loop pattern, plus the controls every loop needs.
 - 📝 **[Durable Execution](durable-execution.md)**: checkpoints, replay, and resume.
 - 📝 **[Why Spec-Driven Development Is Essential for Agentic SE](spec-driven-development-agentic.md)**: the spec is what the critic reviews against.
+- 📝 **[Claude Code Prompt Patterns](claude-code-prompt-patterns.md)**: the same ideas as one-line prompts for day-to-day work in Claude Code.
 
 ### Primary references
 
