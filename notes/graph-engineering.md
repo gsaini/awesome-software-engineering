@@ -188,6 +188,7 @@ This note sits at the intersection of much of the library:
 - 📝 **[Building an Agent Evaluator](building-agent-evaluators.md)** — a trajectory is a path through the graph; validators are nodes.
 - 📝 **[Critique Agents as a Graph](critique-agent-graph.md)** — one pattern worked end to end: the prompts for each node, and a code gate that critiques the critic.
 - 📝 **[Model Context Protocol](model-context-protocol.md)** — the tools that graph nodes call.
+- 📝 **[Retrieval-Augmented Generation](retrieval-augmented-generation.md)** — the vector/hybrid RAG that GraphRAG (§6) is compared against.
 
 ### Primary references
 
