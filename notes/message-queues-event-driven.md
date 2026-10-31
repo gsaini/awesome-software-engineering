@@ -184,6 +184,7 @@ You cannot atomically write to a database *and* a broker (no distributed transac
 Related material in this library:
 
 - 📄 **[The Log — Jay Kreps](../papers/)** and **[Kafka](../papers/)** — the foundational reading for §2; the log as universal backbone.
+- 📝 **[Event Sourcing & CQRS](event-sourcing-cqrs.md)** — when the event log is the source of truth, not just an outbox beside it.
 - 📝 **[Caching Strategies](caching-strategies.md)** — CDC-based invalidation is the event-driven pattern from §7.
 - 📝 **[API Design](api-design.md)** — sync vs. async boundaries, idempotency keys, and schema evolution.
 - 📝 **[Load Balancing & Rate Limiting](load-balancing-rate-limiting.md)** — leaky-bucket smoothing, backpressure, load shedding, backoff+jitter.

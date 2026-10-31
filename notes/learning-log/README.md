@@ -6,6 +6,7 @@ A dated journal of what I studied each day — key takeaways in my own words, co
 
 | Date | Topics covered |
 | ---- | -------------- |
+| [2026-10-30](2026-10-30.md) | Event sourcing & CQRS (decide vs. evolve, streams & optimistic concurrency, projections & rebuilds, upcasting, crypto-shredding, ES vs. outbox) |
 | [2026-10-07](2026-10-07.md) | Retrieval-Augmented Generation (chunking & contextual retrieval, hybrid search + RRF + reranking, lost-in-the-middle, RAG vs. long context, agentic RAG, eval & failure points) |
 | [2026-09-17](2026-09-17.md) | Feature flags & progressive delivery (deploy ≠ release, flag types, canary/blue-green, expand/contract, flag debt) |
 | [2026-09-12](2026-09-12.md) | Stream processing (event time & watermarks, windowing, stream–table duality, exactly-once, Kappa) |
