@@ -168,6 +168,7 @@ For loops running at scale, add:
 
 Related material in this library:
 
+- 📝 **[Harness Engineering](harness-engineering.md)** — the whole system the loop runs inside: tools, context, policy, evidence, memory, traces.
 - 📘 **[The New SDLC With Vibe Coding](../whitepapers/ai-agentic-engineering/)** — Google whitepaper on the shift from ad-hoc prompting to agentic engineering. The natural companion to this note.
 - 📗 **[AI Engineering](../books/) — Chip Huyen** — building production systems on foundation models.
 - 📄 **[ReAct](../papers/)** and **[Chain-of-Thought Prompting](../papers/)** in the papers index — the reasoning-and-acting foundations of loops.

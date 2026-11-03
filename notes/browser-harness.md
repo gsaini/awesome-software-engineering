@@ -187,6 +187,7 @@ That's a useful lesson on its own. **A thin interface is not a thin system.** Th
 
 Related material in this library:
 
+- 📝 **[Harness Engineering](harness-engineering.md)** — the general discipline, and its "build to delete" argument that meets this note's bitter lesson.
 - 📝 **[Jev Ultrafast](jev-ultrafast.md)** — the opposite design from the same team: choose, don't generate.
 - 📝 **[Loop Engineering](loop-engineering.md)** — the harness is a loop whose tools grow during the loop.
 - 📝 **[Model Context Protocol](model-context-protocol.md)** — `browser-harness-mcp` exposes the same helpers as MCP tools.
